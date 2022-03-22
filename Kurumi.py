@@ -40,8 +40,8 @@ Send me any message then i can reply you!
 """
 
 ABOUT = """
-😘 My Darling is @Yoga_CIC
-I was born in @YBotsSupport
+😘 My Darling is @XFlick
+I was born in @animeXflickz
 
 See List of My Other Brother/Sisters on @SpreadNetworks
 
