@@ -58,7 +58,7 @@ RTEXT = ["I've started...",
          "Dameee! *run away",
          "B-baka>///<",
          "You see my cat?",
-         "My darling is @Yoga_CIC",
+         "My darling is @XFlick",
          "FBI Open Up!!",
          "My money, someone stolen my money 😢",
          "Are you lolicon?"
@@ -67,13 +67,13 @@ RTEXT = ["I've started...",
 async def lunaQuery(query: str, user_id: int):
     query = (
         query
-        if LANGUAGE == "en"
-        else (await arq.translate(query, "en")).result.translatedText
+        if LANGUAGE == "id"
+        else (await arq.translate(query, "id")).result.translatedText
     )
     resp = (await arq.luna(query, user_id)).result
     return (
         resp
-        if LANGUAGE == "en"
+        if LANGUAGE == "id"
         else (
             await arq.translate(resp, LANGUAGE)
         ).result.translatedText
@@ -101,7 +101,7 @@ async def type_and_send(message):
 @luna.on_message(filters.command("repo") & ~filters.edited)
 async def repo(_, message):
     await message.reply_text(
-        "[GitHub](https://github.com/zYxDevs/KurumiChatbot)"
+        "[GitHub](https://github.com/XFlickz/KurumiChatbot)"
         + " | [Support](t.me/YBotsSupport)"
         + " | [Updates](t.me/SpreadNetworks)",
         disable_web_page_preview=True,
@@ -175,7 +175,7 @@ async def main():
 --------------------
 | Chatbot Started! |
 --------------------
-|   Yoga Pranata   |
+|   XFlickz        |
 --------------------
 """
     )
